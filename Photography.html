@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1>Photography Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Logo Design.html">Logo Design</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="project-gallery">
+            <div class="project-item">
+                <img src="1.jpg" alt="Logo 2">
+            </div>
+            <div class="project-item">
+                <img src="2.jpg" alt="Logo 3">
+            </div>
+            <div class="project-item">
+                <img src="3.jpg" alt="Logo 3">
+            </div>
+            <div class="project-item">
+                <img src="4.jpg" alt="Logo 3">
+            </div>
+            <div class="project-item">
+                <img src="5.jpg" alt="Logo 3">
+            </div>
+            <div class="project-item">
+                <img src="Final 1.jpg" alt="Logo 3">
+            </div>
+            <div class="project-item">
+                <img src="Final 2.jpg" alt="Logo 3">
+            </div>
+            <div class="project-item">
+                <img src="Final 3.jpg" alt="Logo 3">
+            </div>
+            <div class="project-item">
+                <img src="Final 4.jpg" alt="Logo 3">
+            </div>
+        </section>
+    </main>
+    <div class="contact-me">
+        <h2>Contact Me</h2>
+        <p>If you're interested in my design services, feel free to contact me via:</p>
+        <ul>
+            <li>Email: rico33998@gmail.com</li>
+        </ul>
+        <ul>
+            <li>Phone: +62 857 6614 1587</li>
+        </ul>
+        <ul>
+            <li>Social Media: <a href="https://www.instagram.com/ricoliew_/">Instagram</a></li>
+        </ul>  
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=6285766141587" target="_blank" class="whatsapp-button fade-in">
+        <div class="button whatsapp">
+            <img src="Logo Whatsapp.png" alt="WhatsApp Logo" class="whatsapp-logo">
+            <span class="button-text"></span>
+        </div>
+    </a>
+    <footer>
+        <p>&copy; 2023 Rico</p>
+    </footer>
+    <script>
+        window.onscroll = function() {stickyHeader()};
+
+        var header = document.getElementById("header");
+        var sticky = header.offsetTop;
+
+        function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
